@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+      pre {
+        background: lightgray;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Main Site</h1>
+
+    <div>
+      <textarea id="message">Message to send</textarea>
+      <br>
+      <button id="button">Send message</button>
+    </div>
+
+    <hr>
+
+    <iframe src="http://localhost:4567"></iframe>
+
+    <hr>
+
+    <h3>Response back from iframe</h3>
+    <pre>
+      <code id="response-back">(empty)</code>
+    </pre>
+
+    <script src="site-script.js"></script>
+  </body>
+</html>

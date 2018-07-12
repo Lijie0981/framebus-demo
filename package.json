@@ -1,0 +1,19 @@
+{
+  "name": "framebus-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/site.js > site/site-script.js && browserify src/iframed-site.js > iframed-site/iframed-site-script.js",
+    "prestart": "npm run build",
+    "start": "http-server site -p 3000 & http-server iframed-site -p 4567"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.2.2",
+    "framebus": "^3.0.1",
+    "http-server": "^0.11.1"
+  }
+}
